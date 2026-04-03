@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendy Karen RAKOTONDRAVONY | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        :root {
+            --primary: #00c38b;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0a1729 0%, #112233 100%);
+        }
+
+        .section-header {
+            position: relative;
+        }
+        
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: #00c38b;
+            bottom: -6px;
+            left: 0;
+        }
+
+        .project-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(0 195 139 / 0.25);
+        }
+
+        .screenshot {
+            transition: all 0.3s ease;
+        }
+        
+        .screenshot:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- NAVBAR -->
+    <nav class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center text-white font-bold text-xl">WK</div>
+                <h1 class="heading-font text-2xl tracking-tighter">Wendy Karen</h1>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">À propos</a>
+                <a href="#project" class="hover:text-emerald-400 transition-colors">Projet</a>
+                <a href="#skills" class="hover:text-emerald-400 transition-colors">Compétences</a>
+                <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1UYcraQIu8OzdXwl0ttiBD_mEVfHUiKKl/view?usp=sharing" 
+               class="bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-2xl text-sm font-semibold flex items-center gap-2 transition-colors">
+                <i class="fa-solid fa-circle-info"></i>
+                Voir mon CV
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg py-24">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 bg-slate-800 text-emerald-400 text-sm px-4 py-2 rounded-3xl mb-6">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    </span>
+                    Développeuse web/mobile en recherche de stage
+                </div>
+                
+                <h1 class="heading-font text-6xl md:text-7xl leading-none tracking-tighter mb-6">
+                    Wendy Karen<br>RAKOTONDRAVONY
+                </h1>
+                
+                <p class="text-2xl text-slate-400 mb-8 max-w-lg">
+                    Passionnée par la transformation d’idées innovantes en solutions concrètes, de la conception à l’implémentation, je m’intéresse particulièrement à la programmation en Java et aux algorithmes.
+                </p>
+                
+                <div class="flex items-center gap-4">
+                    <a href="#project" 
+                       class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-3xl font-semibold flex items-center gap-3 text-lg transition-all">
+                        Mon projet phare
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    
+                    <a href="mailto:rakotondravonykaren@gmail.com" 
+                       class="border border-slate-700 hover:border-slate-400 px-8 py-4 rounded-3xl font-medium flex items-center gap-3 transition-colors">
+                        Me contacter
+                    </a>
+                </div>
+
+                <div class="mt-12 flex items-center gap-8 text-sm">
+                    <div>
+                        <div class="text-emerald-400 font-mono">+261 32 92 135 58</div>
+                        <div class="text-slate-500">Antananarivo, Madagascar</div>
+                    </div>
+                    <div class="h-10 w-px bg-slate-700"></div>
+                    <div>
+                        <a href="mailto:rakotondravonykaren@gmail.com" class="text-emerald-400 hover:underline">rakotondravonykaren@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo placeholder - remplace par ta photo -->
+            <div class="relative">
+                            <div class="text-center text-xs mt-6 text-gray-500 flex items-center justify-center gap-x-2">
+                            <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                                Ouverte aux opportunités
+                            </div>
+                            <div class="absolute top-10 left-4 bg-slate-900 border border-emerald-500 text-emerald-400 text-xs font-medium px-4 py-1 rounded-2xl shadow-lg flex items-center gap-2">
+                                <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                                Disponible dès maintenant
+                            </div>
+                <div class="aspect-square w-full max-w-md mx-auto rounded-3xl overflow-hidden border-8 border-slate-800 bg-slate-900">
+                    
+                    <img src="images/photo_pro.png" 
+                         alt="Wendy Karen RAKOTONDRAVONY"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-4 -right-4 bg-slate-900/40 backdrop-blur-md border border-emerald-500 rounded-2xl px-6 py-3 flex items-center gap-3 shadow-2xl">
+                    <div class="w-16 h-16">
+                        <img src="images/esmia_logo.png" alt="ESMIA Innovation" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <div class="font-semibold">Master 1 - Étudiante en Informatique Appliquée à la Gestion d’Entreprise</div>
+                        <div class="text-emerald-400 text-sm">ESMIA Innovation • en cours</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- À PROPOS -->
+    <!-- À PROPOS -->
+<section id="about" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-12 gap-12">
+        <!-- Texte principal -->
+        <div class="md:col-span-5">
+            <h2 class="section-header text-4xl heading-font tracking-tighter mb-6">À propos de moi</h2>
+            <p class="text-lg text-slate-400 leading-relaxed">
+                Je suis diplômée d’une Licence en Informatique Risques et Décision à l’ESMIA, obtenue avec mention Bien, et actuellement étudiante en Master 1 en Informatique Appliquée à la Gestion d’Entreprise. Passionnée par le développement d’applications web et mobiles ainsi que par la création d’outils numériques utiles, je suis ouverte à toutes opportunités pour apprendre, évoluer et contribuer à des projets intéressants.
+            </p>
+            
+            <div class="mt-10 grid grid-cols-3 gap-6 text-center">
+                <div>
+                    <div class="text-3xl font-semibold text-emerald-400">Diplôme Licence</div>
+                    <div class="text-sm text-slate-500">Informatique Risques & Décision</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-semibold text-emerald-400">Mention Bien</div>
+                    <div class="text-sm text-slate-500">Excellence académique</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-semibold text-emerald-400">Ouverte</div>
+                    <div class="text-sm text-slate-500">À toutes opportunités</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Motivation -->
+        <div class="md:col-span-7 space-y-6">
+            <!-- Bloc Motivation -->
+            <div class="bg-slate-900/40 backdrop-blur-md rounded-3xl p-6 text-sm leading-relaxed">
+                <h3 class="font-semibold mb-4 text-emerald-400">Ce qui me motive</h3>
+                <p>
+                    Je suis motivée par l’apprentissage continu et la possibilité de contribuer à des projets qui ont un impact réel. J’aime relever de nouveaux challenges et explorer différentes technologies pour progresser chaque jour.
+                </p>
+            </div>
+
+            <!-- Bloc Objectifs -->
+            <div class="bg-slate-900/40 backdrop-blur-md rounded-3xl p-6 text-sm leading-relaxed">
+                <h3 class="font-semibold mb-4 text-emerald-400">Mes objectifs</h3>
+                <p>
+                    Mon objectif est de combiner mes compétences en développement web et mobile avec mon intérêt pour la gestion afin de créer des solutions numériques efficaces et innovantes, tout en restant ouverte à explorer différents domaines et opportunités professionnelles.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- PROJET PRINCIPAL -->
+    <section id="project" class="bg-slate-900 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="px-4 py-2 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm font-medium">PROJET PHARE • STAGE 2025</span>
+                <h2 class="text-5xl heading-font tracking-tighter mt-4">JEKY – Système d’aide à la décision<br>pour l’étude de marché agricole et d'élevage (web)</h2>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Module d’analyse stratégique intégré à la plateforme JEKY pour les porteurs de projets agricoles et d’élevage à Madagascar.</p>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-10">
+                <!-- Colonne gauche : infos -->
+                <div class="md:col-span-4 space-y-8">
+                    
+                    <!-- Contexte -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fa-solid fa-circle-info text-emerald-400"></i>
+                            <h3 class="font-semibold text-lg">Contexte</h3>
+                        </div>
+                        <p class="text-slate-400">Projet réalisé lors de mon stage de 3 mois chez <strong>Masàky</strong> (Arambato, Antananarivo). Objectif : aider les porteurs de projets agricoles/élevages à prendre des décisions éclairées grâce à des données de marché locales fiables.</p>
+                    </div>
+
+                    <!-- Problème -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-400"></i>
+                            <h3 class="font-semibold text-lg">Problème</h3>
+                        </div>
+                        <ul class="text-slate-400 space-y-2">
+                            <li class="flex gap-2"><span class="text-emerald-400">•</span> Manque d’informations fiables sur les prix et la demande</li>
+                            <li class="flex gap-2"><span class="text-emerald-400">•</span> Mauvaise planification agricole et élevage</li>
+                            <li class="flex gap-2"><span class="text-emerald-400">•</span> Décisions prises à l’aveugle → pertes de revenus et déforestation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Solution -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fa-solid fa-lightbulb text-emerald-400"></i>
+                            <h3 class="font-semibold text-lg">Solution</h3>
+                        </div>
+                        <p class="text-slate-400">Développement d’un module complet d’étude de marché intégré à la plateforme JEKY.</p>
+                    </div>
+
+                    <!-- Fonctionnalités -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fa-solid fa-check-circle text-emerald-400"></i>
+                            <h3 class="font-semibold text-lg">Fonctionnalités principales</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 text-sm">
+                            <div class="bg-slate-800 rounded-2xl p-4 flex items-center gap-3">
+                                <span class="text-2xl">📊</span>
+                                <span>Simulation de projet agricole</span>
+                            </div>
+                            <div class="bg-slate-800 rounded-2xl p-4 flex items-center gap-3">
+                                <span class="text-2xl">📈</span>
+                                <span>Tableau de bord des produits les plus vendus à Antananarivo</span>
+                            </div>
+                            <div class="bg-slate-800 rounded-2xl p-4 flex items-center gap-3">
+                                <span class="text-2xl">🔍</span>
+                                <span>Analyse de marché localisée</span>
+                            </div>
+                            <div class="bg-slate-800 rounded-2xl p-4 flex items-center gap-3">
+                                <span class="text-2xl">📋</span>
+                                <span>Gestion complète des enquêtes terrain</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonne droite : captures + détails -->
+                <div class="md:col-span-8">
+                    <div class="bg-slate-950 border border-slate-800 rounded-3xl p-8">
+                        <h3 class="text-emerald-400 font-medium mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-images"></i> Captures d’écran du module
+                        </h3>
+                        
+                        <!-- Galerie -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                            <div class="screenshot bg-slate-900 rounded-2xl overflow-hidden border border-slate-700 cursor-pointer" onclick="openLightbox('images/1.png')">
+                                <img src="images/1.png" alt="Accueil utilisateur" class="w-full">
+                                <p class="text-center text-xs py-2 text-slate-400">Accueil & Dashboard</p>
+                            </div>
+                            <div class="screenshot bg-slate-900 rounded-2xl overflow-hidden border border-slate-700 cursor-pointer" onclick="openLightbox('images/3.png')">
+                                <img src="images/3.png" alt="Simulation" class="w-full">
+                                <p class="text-center text-xs py-2 text-slate-400">Simulation intelligente</p>
+                            </div>
+                            <div class="screenshot bg-slate-900 rounded-2xl overflow-hidden border border-slate-700 cursor-pointer" onclick="openLightbox('images/4.png')">
+                                <img src="images/4.png" alt="Analyse marché" class="w-full">
+                                <p class="text-center text-xs py-2 text-slate-400">Analyse marché localisée</p>
+                            </div>
+                        </div>
+
+                        <!-- Lightbox -->
+                        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+                            <img id="lightbox-img" src="" class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg">
+                        </div>
+
+                        <div class="text-center mt-6">
+                            <a href="https://drive.google.com/file/d/1uwHl4MFAu-WLS23AyjV5cC4Eb_wa_FZd/view?usp=sharing" 
+                            class="bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-2xl text-sm font-semibold flex items-center gap-2 transition-colors inline-block">
+                                <i class="fa-solid fa-circle-info"></i>
+                                Voir le rapport complet (rapport de stage)
+                            </a>
+                        </div>
+
+<script>
+function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    lightbox.classList.remove('hidden');
+
+    // Fermer au clic sur le fond
+    lightbox.onclick = () => {
+        lightbox.classList.add('hidden');
+    }
+}
+</script>
+
+                        <div class="mt-8 pt-8 border-t border-slate-800">
+                            <h4 class="font-medium mb-4">Technologies utilisées</h4>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">Vue.js</span>
+                                <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">Laravel</span>
+                                <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">PostgreSQL</span>
+                                <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">Jira + Scrum</span>
+                                <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">UML + Design Patterns</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-8 border-t border-slate-800 grid md:grid-cols-2 gap-8 text-sm">
+                            <div>
+                                <h4 class="font-medium mb-3">Méthodologie</h4>
+                                <ul class="space-y-2 text-slate-400">
+                                    <li>• Analyse via arbres à problèmes / solutions</li>
+                                    <li>• Modélisation UML complète (cas d’utilisation, séquences, classes)</li>
+                                    <li>• Design Patterns (MVC, Builder, Strategy, Observer…)</li>
+                                    <li>• Méthode Agile Scrum avec Jira</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-3">Résultats &amp; Impact</h4>
+                                <ul class="space-y-2 text-slate-400">
+                                    <li>• +30% d’amélioration estimée de la prise de décision</li>
+                                    <li>• -25% de réduction des erreurs de production</li>
+                                    <li>• Soutenance Licence : <strong class="text-emerald-400">18/20</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- COMPÉTENCES -->
+<section id="skills" class="max-w-7xl mx-auto px-6 py-20">
+            <h2 class="section-header text-4xl heading-font tracking-tighter mb-12">Mes compétences</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+        <!-- Informatique -->
+        <div class="bg-slate-900/40 backdrop-blur-md rounded-3xl p-6 text-white">
+            <h3 class="font-semibold mb-4 text-emerald-400">Informatique</h3>
+            <div class="grid grid-cols-2 gap-y-4 text-sm">
+                <div class="flex items-center gap-x-3"><span class="text-2xl">☕</span> JAVA</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">🐍</span> Python</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">📦</span> Laravel</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">🌱</span> Spring Boot</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">📜</span> JavaScript</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">🔷</span> Vue.js</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">🗄️</span> MySQL / PostgreSQL</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">🌐</span> HTML / CSS</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">📱</span> Flutter / Dart</div>
+            </div>
+        </div>
+        
+        <!-- Soft skills -->
+        <div class="bg-slate-900/40 backdrop-blur-md rounded-3xl p-6 text-white">
+            <h3 class="font-semibold mb-4 text-emerald-400">Soft skills</h3>
+            <div class="flex flex-wrap gap-3 text-white">
+                <span class="px-5 py-2 rounded-full bg-white/20 shadow-inner text-sm">Autonomie</span>
+                <span class="px-5 py-2 rounded-full bg-white/20 shadow-inner text-sm">Adaptabilité</span>
+                <span class="px-5 py-2 rounded-full bg-white/20 shadow-inner text-sm">Gestion du temps</span>
+                <span class="px-5 py-2 rounded-full bg-white/20 shadow-inner text-sm">Résolution de problèmes</span>
+                <span class="px-5 py-2 rounded-full bg-white/20 shadow-inner text-sm">Capacité d’apprentissage</span>
+                <span class="px-5 py-2 rounded-full bg-white/20 shadow-inner text-sm">Travail en équipe</span>
+                <span class="px-5 py-2 rounded-full bg-white/20 shadow-inner text-sm">Organisation</span>
+                <span class="px-5 py-2 rounded-full bg-white/20 shadow-inner text-sm">Pensée critique</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LANGUES & CENTRES D’INTÉRÊT -->
+<section id="langues" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-10">
+        <!-- Langues -->
+        <div class="bg-slate-900/40 backdrop-blur-md rounded-3xl p-6 text-white">
+            <h3 class="font-semibold mb-4 text-emerald-400">Langues</h3>
+            <div class="space-y-4">
+                <div class="flex justify-between"><span class="font-medium">Malagasy</span><span class="text-green-400">Courant</span></div>
+                <div class="flex justify-between"><span class="font-medium">Français</span><span class="text-green-400">Courant</span></div>
+                <div class="flex justify-between"><span class="font-medium">Anglais</span><span class="text-amber-400">Intermédiaire</span></div>
+                <div class="flex justify-between"><span class="font-medium">Coréen</span><span class="text-gray-300">Débutant</span></div>
+            </div>
+        </div>
+        
+        <!-- Centres d’intérêt -->
+        <div class="bg-slate-900/40 backdrop-blur-md rounded-3xl p-6 text-white" id="interets">
+            <h3 class="font-semibold mb-4 text-emerald-400">Centres d’intérêt</h3>
+            <div class="flex flex-wrap gap-4">
+                <span class="px-6 py-3 rounded-3xl shadow-inner text-sm flex items-center gap-x-2 bg-white/20">🎨 Dessin</span>
+                <span class="px-6 py-3 rounded-3xl shadow-inner text-sm flex items-center gap-x-2 bg-white/20">📖 Lecture</span>
+                <span class="px-6 py-3 rounded-3xl shadow-inner text-sm flex items-center gap-x-2 bg-white/20">💻 Technologie</span>
+                <span class="px-6 py-3 rounded-3xl shadow-inner text-sm flex items-center gap-x-2 bg-white/20">🧶 Tricot / Crochet</span>
+                <span class="px-6 py-3 rounded-3xl shadow-inner text-sm flex items-center gap-x-2 bg-white/20">🏊 Natation</span>
+                <span class="px-6 py-3 rounded-3xl shadow-inner text-sm flex items-center gap-x-2 bg-white/20">💃 Danse</span>
+            </div>
+        </div>
+    </div>
+</section><!-- FOOTER / CONTACT -->
+<footer id="contact" class="bg-slate-950 border-t border-slate-800 py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="text-3xl heading-font tracking-tighter mb-4">Prêt à collaborer ?</p>
+        <p class="text-slate-400 max-w-md mx-auto mb-10">
+            Je suis à la recherche d’un stage en développement web ou mobile. N’hésitez pas à me contacter pour échanger ou collaborer sur un projet !
+        </p>
+        
+        <a href="mailto:rakotondravonykaren@gmail.com" 
+           class="inline-flex items-center gap-4 bg-white text-slate-900 hover:bg-emerald-400 hover:text-white px-10 py-6 rounded-3xl text-xl font-semibold transition-all">
+            Envoyer un message 
+            <i class="fa-solid fa-paper-plane"></i>
+        </a>
+        
+        <div class="text-xs text-slate-500 mt-16">
+            © 2026 Wendy Karen RAKOTONDRAVONY • Portfolio réalisé avec ❤️ et Tailwind CSS
+        </div>
+    </div>
+</footer>
+    <script>
+        // Tailwind script already loaded via CDN
+        function initTailwind() {
+            return {
+                // nothing needed
+            }
+        }
+    </script>
+</body>
+</html>
