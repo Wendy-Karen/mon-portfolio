@@ -69,7 +69,8 @@
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#about" class="hover:text-emerald-400 transition-colors">À propos</a>
-                <a href="#project" class="hover:text-emerald-400 transition-colors">Projet</a>
+                <a href="#project" class="hover:text-emerald-400 transition-colors">Projets</a>
+                <a href="#formations" class="hover:text-emerald-400 transition-colors">Formations</a>
                 <a href="#skills" class="hover:text-emerald-400 transition-colors">Compétences</a>
                 <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
             </div>
@@ -151,7 +152,7 @@
                     </div>
                     <div>
                         <div class="font-semibold">Master 1 - Étudiante en Informatique Appliquée à la Gestion d’Entreprise</div>
-                        <div class="text-emerald-400 text-sm">ESMIA Innovation • en cours</div>
+                        <div class="text-emerald-400 text-sm">ESMIA Innovation • 2026 • Mention Bien (15,37/20)</div>
                     </div>
                 </div>
                 
@@ -354,8 +355,8 @@ function openLightbox(src) {
                             <div>
                                 <h4 class="font-medium mb-3">Résultats &amp; Impact</h4>
                                 <ul class="space-y-2 text-slate-400">
-                                    <li>• +30% d’amélioration estimée de la prise de décision</li>
-                                    <li>• -25% de réduction des erreurs de production</li>
+                                    <!-- <li>• +30% d’amélioration estimée de la prise de décision</li>
+                                    <li>• -25% de réduction des erreurs de production</li>-->
                                     <li>• Soutenance Licence : <strong class="text-emerald-400">18/20</strong></li>
                                 </ul>
                             </div>
@@ -365,7 +366,47 @@ function openLightbox(src) {
             </div>
         </div>
     </section>
+    <section id="project-cloudcloset" class="py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span class="px-4 py-2 bg-emerald-500/10 text-emerald-400 rounded-3xl text-sm font-medium">PROJET ACADÉMIQUE • M1 2026</span>
+          <h2 class="text-5xl heading-font tracking-tighter mt-4">Cloud Closet – Gestion de garde-robe<br>et planification de tenues (mobile)</h2>
+          <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Application Flutter qui aide à organiser sa garde-robe et à planifier ses tenues sur un calendrier.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="space-y-6 text-slate-400">
+            <ul class="space-y-2">
+              <li>• Calendrier de tenues et cartes « starterpack » partageables</li>
+              <li>• Suggestions hebdomadaires par algorithme déterministe, avec anti-répétition (±3 jours)</li>
+              <li>• Assistant de création de tenues avec filtres (évènement, confort, matière, couleur, saison, style)</li>
+              <li>• Conception fonctionnelle : expression des besoins (CdCF), diagrammes UML</li>
+            </ul>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">Flutter / Dart</span>
+              <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">Firebase</span>
+              <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">Riverpod</span>
+              <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">go_router</span>
+              <span class="px-5 py-2 bg-slate-800 text-emerald-400 rounded-3xl text-sm font-medium">Clean architecture</span>
+            </div>
+          </div>
+          <!-- 3 captures : calendrier, wizard de tenues, carte starterpack -->
+          <div class="grid grid-cols-3 gap-4">
+            <img src="images/cc1.png" alt="Calendrier" class="rounded-2xl border border-slate-700">
+            <img src="images/cc2.png" alt="Assistant de tenues" class="rounded-2xl border border-slate-700">
+            <img src="images/cc3.png" alt="Carte starterpack" class="rounded-2xl border border-slate-700">
+          </div>
+        </div>
+      </div>
+    </section>
 
+<section id="formations" class="max-w-7xl mx-auto px-6 py-20">
+  <h2 class="section-header text-4xl heading-font tracking-tighter mb-12">Formations & attestations</h2>
+  <div class="bg-slate-900/40 backdrop-blur-md rounded-3xl p-6">
+    <h3 class="font-semibold text-emerald-400">Comprendre le fonctionnement des robots</h3>
+    <p class="text-slate-400 text-sm mt-1">Attestation de fin de formation (5 jours) • Orange Digital Center Madagascar • Septembre 2026</p>
+  </div>
+</section>
+    
 <!-- COMPÉTENCES -->
 <section id="skills" class="max-w-7xl mx-auto px-6 py-20">
             <h2 class="section-header text-4xl heading-font tracking-tighter mb-12">Mes compétences</h2>
@@ -383,6 +424,8 @@ function openLightbox(src) {
                 <div class="flex items-center gap-x-3"><span class="text-2xl">🔷</span> Vue.js</div>
                 <div class="flex items-center gap-x-3"><span class="text-2xl">🗄️</span> MySQL / PostgreSQL</div>
                 <div class="flex items-center gap-x-3"><span class="text-2xl">🌐</span> HTML / CSS</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">📱</span> Flutter / Dart</div>
+                <div class="flex items-center gap-x-3"><span class="text-2xl">🧩</span> UML / Analyse fonctionnelle</div>
             </div>
         </div>
         
@@ -443,6 +486,7 @@ function openLightbox(src) {
             Envoyer un message 
             <i class="fa-solid fa-paper-plane"></i>
         </a>
+        <a href="https://www.linkedin.com/in/wendy-karen-rakotondravony" class="block mt-6 text-emerald-400 hover:underline">LinkedIn</a>
         
         <div class="text-xs text-slate-500 mt-16">
             © 2026 Wendy Karen RAKOTONDRAVONY • Portfolio réalisé avec ❤️ et Tailwind CSS
